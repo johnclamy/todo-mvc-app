@@ -7,7 +7,41 @@
     <title>My Todos</title>
   </head>
   <body>
-    <p>Test App...</p>
+    <div class="container">
+      <header class="app-header">
+        <h1>my todo list</h1>
+      </header>
+      <section class="todo-entry">
+        <h2 class="todo-entry__title">add todo</h2>
+        <form class="todo-entry__form">
+          <label for="todo" class="todo-entry__lbl">Enter todo</label>
+          <input
+            type="text"
+            id="todo"
+            maxlength="60"
+            autocomplete="off"
+            class="todo-entry_input"
+            placeholder="Enter a new todo item"
+          />
+          <button class="btn todo-entry__btn">add</button>
+        </form>
+      </section>
+      <article class="todo-list">
+        <header class="todo-list__header">
+          <h2 class="todo-list__title"></h2>
+          <button
+            class="todo-list__btn btn"
+            id="delete-todos"
+            title="Delete all todos from list"
+            aria-label="Delete all todos from list"
+          >
+            delete all
+          </button>
+        </header>
+        <hr />
+        <ul class="todo-list__items"></ul>
+      </article>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
