@@ -8,40 +8,54 @@
   </head>
   <body>
     <div class="container">
-      <header class="app-header">
-        <h1>my todo list</h1>
-      </header>
-      <section class="todo-entry">
-        <h2 class="todo-entry__title">add todo</h2>
-        <form class="todo-entry__form">
-          <label for="todo" class="todo-entry__lbl">Enter todo</label>
-          <input
-            type="text"
-            id="todo"
-            maxlength="60"
-            autocomplete="off"
-            class="todo-entry_input"
-            placeholder="Enter a new todo item"
-          />
-          <button class="btn todo-entry__btn">add</button>
-        </form>
-      </section>
-      <article class="todo-list">
-        <header class="todo-list__header">
-          <h2 class="todo-list__title"></h2>
-          <button
-            class="todo-list__btn btn"
-            id="delete-todos"
-            title="Delete all todos from list"
-            aria-label="Delete all todos from list"
-          >
-            delete all
-          </button>
-        </header>
-        <hr />
-        <ul class="todo-list__items"></ul>
-      </article>
+      <nav class="navbar">
+        <p class="logo">my todos</p>
+      </nav>
+      <main>
+        <section class="todo-entry">
+          <header>
+            <h1>new item entry</h1>
+          </header>
+          <form class="todo-entry__form" id="todo-entry-form">
+            <label for="todo-input"><span>enter</span> a todo</label>
+            <input
+              type="text"
+              id="todo-input"
+              class="todo-entry__input"
+              maxlength="60"
+              autocomplete="off"
+              placeholder="Add your todo item"
+            />
+            <button
+              id="add-todo"
+              class="btn todo-entry__btn"
+              title="Add a new todo item"
+              aria-label="Add a new todo item to list"
+            >
+              submit todo
+            </button>
+          </form>
+        </section>
+        <section class="todo-list">
+          <header>
+            <h1>todo list</h1>
+            <button
+              class="btn todo-list__btn-clear"
+              title="Delete all todo items from list"
+              aria-label="Remove all items from the list"
+            >
+              clear all
+            </button>
+          </header>
+          <hr />
+          <ul id="todos" class="off-screen">
+            <!-- todo list goes here... -->
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <p>2023 | Just a simple demo Todos app. No rights reserved.</p>
+      </footer>
     </div>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
