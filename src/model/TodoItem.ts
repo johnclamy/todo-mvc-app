@@ -1,7 +1,7 @@
 import { Todo } from "../interface/index";
 
 export default class TodoItem implements Todo {
-  private constructor(
+  constructor(
     private _id: string = "",
     private _task: string = "",
     private _isChecked: boolean = false
