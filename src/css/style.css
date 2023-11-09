@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+body {
+  color: #36f;
+  line-height: 1.7;
+}
+
+nav,
+section,
+footer {
+  margin: 0.25rem;
+  padding: 0.85rem 0.5rem;
+  border: 2px solid #36f;
+  border-radius: 12px;
+}
+
+section {
+  padding: 1rem 0.5rem 2rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+hr {
+  border-top: 2px solid #36f;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.off-screen {
+  position: absolute;
+  left: -10000;
+}
+
+.btn {
+  border: 2px solid #36f;
+  border-radius: 12px;
+  color: #36f;
+  background-color: white;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #b6f9ff;
+}
+
+.navbar {
+  margin-top: 0.75rem;
+  margin-bottom: 2.25rem;
+}
+
+.logo,
+.todo-entry__sublbl {
+  text-transform: capitalize;
+}
+
+.todo-entry {
+  margin-bottom: 2.25rem;
+}
+
+.todo-entry__title,
+.todo-list__header {
+  text-transform: capitalize;
+  margin-left: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.todo-entry__form {
+  margin: 0 0.75rem;
+}
+
+.todo-entry__input-group {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.todo-entry__input {
+  border: 2px solid #36f;
+  padding: 0.25rem 0.35rem;
+  border-radius: 12px;
+  color: #36f;
+  flex-grow: 1;
+}
+
+.todo-entry__input:focus {
+  border-color: rgb(44, 102, 134);
+}
+
+.todo-entry__btn {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: rgb(173, 220, 245);
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgb(44, 102, 134);
+  font-size: 0.75rem;
+  padding-left: 0.25rem;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgb(44, 102, 134);
+  font-size: 0.75rem;
+  padding-left: 0.25rem;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgb(44, 102, 134);
+  font-size: 0.75rem;
+  padding-left: 0.25rem;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgb(44, 102, 134);
+  font-size: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.todo-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list__btn-clear {
+  margin-right: 12px;
+}
+
+.todo-list-items {
+  background-color: rgb(44, 102, 134);
+}
+
+.app-footer {
+  text-align: center;
+}
+
+.app-footer__txt {
+  font-size: 0.8rem;
+}
