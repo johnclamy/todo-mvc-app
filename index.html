@@ -14,20 +14,25 @@
       <main>
         <section class="todo-entry">
           <header>
-            <h1>new item entry</h1>
+            <h1 class="todo-entry__title">new item entry</h1>
           </header>
           <form class="todo-entry__form" id="todo-entry-form">
-            <label for="todo-input"><span>enter</span> a todo</label>
-            <input
-              type="text"
-              id="todo-input"
-              class="todo-entry__input"
-              maxlength="60"
-              autocomplete="off"
-              placeholder="Add your todo item"
-            />
+            <div class="todo-entry__input-group">
+              <label for="todo-input"
+                ><span class="todo-entry__sublbl">enter</span> a todo</label
+              >
+              <input
+                type="text"
+                id="todo-input"
+                class="todo-entry__input"
+                maxlength="60"
+                autocomplete="off"
+                placeholder="Add your todo item"
+              />
+            </div>
             <button
               id="add-todo"
+              type="button"
               class="btn todo-entry__btn"
               title="Add a new todo item"
               aria-label="Add a new todo item to list"
@@ -37,9 +42,10 @@
           </form>
         </section>
         <section class="todo-list">
-          <header>
-            <h1>todo list</h1>
+          <header class="todo-list__header">
+            <h1 class="todo-list__title">todo list</h1>
             <button
+              type="button"
               class="btn todo-list__btn-clear"
               title="Delete all todo items from list"
               aria-label="Remove all items from the list"
@@ -48,13 +54,15 @@
             </button>
           </header>
           <hr />
-          <ul id="todos" class="off-screen">
+          <ul id="todos" class="off-screen" class="todo-list-items">
             <!-- todo list goes here... -->
           </ul>
         </section>
       </main>
-      <footer>
-        <p>2023 | Just a simple demo Todos app. No rights reserved.</p>
+      <footer class="app-footer">
+        <p class="app-footer__txt">
+          2023 | Just a simple demo Todos app. No rights reserved. 😁
+        </p>
       </footer>
     </div>
   </body>
