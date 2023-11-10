@@ -12,3 +12,9 @@ export interface Todos {
   addTodo(todo: Todo): void;
   delTodo(id: string): void;
 }
+
+export interface TodosView {
+  ul: HTMLUListElement;
+  clear(): void;
+  render(todos: Todos): void;
+}
